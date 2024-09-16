@@ -14,7 +14,7 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: xiao_flex_v2_left  nice_view
+    shield: xiao_flex_v2_left nice_view
   - board: seeeduino_xiao_ble
     shield: xiao_flex_v2_right
   - board: seeeduino_xiao_ble nice_view
