@@ -14,8 +14,8 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: xiao_flex_v2_left
+    shield: xiao_flex_v2_left nice_view_adapter nice_view_custom
   - board: seeeduino_xiao_ble
-    shield: xiao_flex_v2_right
+    shield: xiao_flex_v2_right nice_view_adapter nice_view_custom
   - board: seeeduino_xiao_ble
     shield: settings_reset
