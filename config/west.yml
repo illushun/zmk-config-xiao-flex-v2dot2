@@ -1,16 +1,14 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
     - name: gpeye
       url-base: https://github.com/GPeye
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: gpeye
       revision: main
       import: app/west.yml
-   - name: hammerbeam-slideshow
+    - name: hammerbeam-slideshow
       remote: gpeye
-      revision: main 
+      revision: main
   self:
     path: config
