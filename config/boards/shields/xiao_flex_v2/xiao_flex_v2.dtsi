@@ -65,21 +65,19 @@ nice_view_spi: &spi0 {
     cs-gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
 };
 
-&display_spi {
-	status = "okay";
-	sharp: ls0xx@0 {
-		compatible = "sharp,ls0xx";
-		label = "DISPLAY";
-		spi-max-frequency = <2000000>;
-		reg = <0>;
-		width = <160>;
-		height = <68>;
-		//disp-en-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>; //testing setting this to 6 from 23
+&nice_view_spi {
+    status = "okay";
+    nice_view: ls0xx@0 {
+        compatible = "sharp,ls0xx";
+        spi-max-frequency = <1000000>;
+        reg = <0>;
+        width = <160>;
+        height = <68>;
 	};
 };
 
 / {
-  chosen {
-    zephyr,display = &sharp;
-  };
+    chosen {
+        zephyr,display = &nice_view;
+    };
 };
