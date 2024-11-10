@@ -14,12 +14,12 @@
 
         layer_3 {
             bindings = <
-&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp EQUAL         &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp EQUAL
-&kp Y         &kp U         &kp I         &kp O         &kp P          &kp MINUS         &kp Y    &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp H         &kp J         &kp K         &kp L         &kp SEMICOLON  &kp APOSTROPHE    &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH      &kp BACKSLASH     &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                                          &kp DELETE    &kp RETURN     &kp RIGHT_GUI     &kp DEL  &kp RET   &kp RGUI
-                                          &mo 2         &kp RIGHT_ALT  &kp RCTRL         &mo 2    &kp RALT  &kp RCTRL
+&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0   &kp EQUAL         &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp EQUAL
+&kp Y         &kp U         &kp I         &kp O              &kp P          &kp MINUS         &kp Y    &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&kp H         &kp J         &kp K         &kp L              &kp SEMICOLON  &kp APOSTROPHE    &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp N         &kp M         &kp COMMA     &kp PERIOD         &kp SLASH      &kp BACKSLASH     &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                                          &kp RIGHT_GUI      &kp RETURN     &kp DELETE        &kp DEL  &kp RET   &kp RGUI
+                                          &kp RIGHT_CONTROL  &kp RIGHT_ALT  &mo 2             &mo 2    &kp RALT  &kp RCTRL
             >;
         };
 
@@ -34,14 +34,14 @@
             >;
         };
 
-        layer_2 {
+        layer_4 {
             bindings = <
-&kp K_MUTE  &trans        &trans        &trans        &trans        &trans     &trans        &trans          &trans          &trans            &trans             &trans
-&kp GRAVE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9      &kp NUMBER_0       &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6     &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW    &trans
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12    &kp KP_PLUS   &kp MINUS       &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-                                        &trans        &trans        &trans     &trans        &trans          &trans
-                                        &trans        &trans        &trans     &trans        &trans          &trans
+&kp F1       &kp F2          &kp F3          &kp F4        &kp F5           &kp F6      &trans        &trans          &trans          &trans            &trans             &trans
+&kp F7       &kp F8          &kp F9          &kp F10       &kp F11          &kp F12     &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9      &kp NUMBER_0       &trans
+&kp ENTER    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none       &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW    &trans
+&kp KP_PLUS  &kp MINUS       &kp EQUAL       &kp LBKT      &kp RBKT         &kp BSLH    &kp KP_PLUS   &kp MINUS       &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+                                             &trans        &trans           &trans      &trans        &trans          &trans
+                                             &trans        &trans           &trans      &trans        &trans          &trans
             >;
         };
 
@@ -53,6 +53,17 @@
 &kp GRAVE  &kp Z   &kp X   &kp C      &kp V      &kp B       &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
                            &kp LSHFT  &kp SPACE  &kp BSPC    &kp DEL  &kp RET   &kp RGUI
                            &kp LCTRL  &kp LALT   &mo 1       &mo 2    &kp RALT  &kp RCTRL
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&kp K_MUTE  &trans        &trans        &trans        &trans        &trans     &trans        &trans          &trans          &trans            &trans             &trans
+&kp GRAVE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9      &kp NUMBER_0       &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6     &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW    &trans
+&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12    &kp KP_PLUS   &kp MINUS       &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+                                        &trans        &trans        &trans     &trans        &trans          &trans
+                                        &trans        &trans        &trans     &trans        &trans          &trans
             >;
         };
     };
